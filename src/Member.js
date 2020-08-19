@@ -8,9 +8,9 @@ export default function Member({ details }) {
         <p>Email: {details.email}</p>
         <p>
           Password: {details.password} (
-          <b>
-            <u>Please keep secret!</u>
-          </b>
+          <u style={{color: "red", fontWeight: "bold"}}>
+            Please keep secret!
+          </u>
           )
         </p>
       </div>
