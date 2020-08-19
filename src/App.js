@@ -117,11 +117,11 @@ function App() {
 
   return (
     <div>
-      <h1>Advanced Forms</h1>
+        <h1>Advanced Forms</h1>
       <SuperFancy>
-          {members.map((member) => {
-            return <Member key={member.id} details={member} />;
-          })}
+        {members.map((member) => {
+          return <Member key={member.id} details={member} />;
+        })}
       </SuperFancy>
       <Form
         values={formValues}
