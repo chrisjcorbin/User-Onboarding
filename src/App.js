@@ -9,6 +9,7 @@ import Member from './Member';
 
 const SuperFancy = style.div`
 display: flex;
+flex-direction: column;
 justify-content: center;
 color: white;
 background-color: royalblue;
