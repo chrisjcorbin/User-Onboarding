@@ -6,19 +6,22 @@ display: flex;
 justify-content: center;
 color: white;
 background-color: rebeccapurple;
-border-radius: 15%;
 padding: 1%;
 margin: 2% auto;
-border: 2.5px solid goldenrod;
 width: 80%;
+box-shadow: 10px 5px 5px goldenrod;
 .errors{
     color: red;
 }
 .button {
-  background-color: goldenrod;
+  background-color: ${() => {
+    let hex = () => Math.floor(Math.random() * 255).toString(16);
+    return "#" + hex() + hex() + hex();
+  }};
   border: none;
   color: white;
   padding: 2%;
+  margin: 5% auto;
   text-align: center;
   font-size: .75rem;
 }
@@ -109,7 +112,6 @@ export default function Form(props) {
                 />
               </label>
             </div>
-            <br/>
             <button className="button" disabled={disabled}>Submit</button>
           </div>
         </form>

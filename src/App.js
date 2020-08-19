@@ -12,11 +12,10 @@ display: flex;
 justify-content: center;
 color: white;
 background-color: royalblue;
-border-radius: 15%;
 padding: 1%;
 margin: 2% auto;
-border: 2.5px solid black;
 width: 80%;
+box-shadow: 10px 5px 5px black;
 `;
 
 const initialFormValues = {
